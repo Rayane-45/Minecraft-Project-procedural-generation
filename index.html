@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>Metaverse</title>
+	<style>
+		html, body {
+		   margin: 0;
+		   height: 100vh;
+		}
+		#app {
+		   width: 100vw;
+		   height: 100vh;
+		   display: block;
+		}
+	</style>
+  </head>
+  <body>
+    <canvas id="app"></canvas>
+    <script type="module" src="/src/main.ts"></script>
+	<script>
+		document.body.addEventListener("wheel", e=>{
+		  if(e.ctrlKey)
+			e.preventDefault();//prevent zoom
+		});
+	  </script>
+  </body>
+</html>
